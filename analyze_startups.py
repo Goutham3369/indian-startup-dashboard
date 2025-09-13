@@ -1,18 +1,13 @@
-# =============================================================================
-# SCRIPT 1: DATA ANALYSIS (analyze_startups.py)
-# =============================================================================
 
 import pandas as pd
 
 # --- Step 1: Load the Data ---
 # Load the CSV file into a pandas DataFrame (a table)
-# The 'encoding' helps prevent errors with special characters in the text.
 df = pd.read_csv('startup_funding.csv', encoding='utf-8')
 
 
 # --- Step 2: Clean the Data (Very Important) ---
 
-# Rename columns to be more consistent and remove spaces
 df.rename(columns={
     'Date dd/mm/yyyy': 'Date', # Correctly named
     'Startup Name': 'StartupName',
@@ -31,7 +26,6 @@ df['CityLocation'] = df['CityLocation'].str.replace(r'Delhi\b', 'New Delhi', reg
 
 
 # Clean the amount column: remove commas, correct specific errors, and convert to numbers
-# Use regex to remove commas and any non-numeric characters except the decimal point
 df['AmountInUSD'] = df['AmountInUSD'].astype(str).str.lower()
 df['AmountInUSD'].replace(to_replace=['undisclosed', 'unknown', 'n/a'], value='0', inplace=True)
 df['AmountInUSD'] = df['AmountInUSD'].str.replace(r'[^\d.]', '', regex=True)

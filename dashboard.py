@@ -1,7 +1,3 @@
-# =============================================================================
-# FINAL SCRIPT V9: Definitive Portfolio Version
-# =============================================================================
-
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -43,7 +39,6 @@ def load_data():
         'Amount in USD': 'AmountInUSD'
     }, inplace=True)
 
-    # Robust Text Cleaning
     text_columns = ['StartupName', 'IndustryVertical', 'CityLocation', 'InvestorsName']
     for col in text_columns:
         if col in df.columns:
