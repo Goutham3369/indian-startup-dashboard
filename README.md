@@ -26,7 +26,7 @@ This project is an interactive web dashboard built with Streamlit that provides 
 ## How to Run
 
 1.  **Clone the repository:**
-    ```bash
+   ```bash
 git clone https://github.com/Goutham3369/indian-startup-dashboard.git
 cd indian-startup-dashboard
     ```
