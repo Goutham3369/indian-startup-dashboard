@@ -2,11 +2,11 @@
 import pandas as pd
 
 # --- Step 1: Load the Data ---
-# Load the CSV file into a pandas DataFrame (a table)
+
 df = pd.read_csv('startup_funding.csv', encoding='utf-8')
 
 
-# --- Step 2: Clean the Data (Very Important) ---
+# --- Step 2: Clean the Data ---
 
 df.rename(columns={
     'Date dd/mm/yyyy': 'Date', # Correctly named
