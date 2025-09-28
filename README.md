@@ -29,7 +29,7 @@ Direct Link for the Site: https://goutham3369-indian-startup-dashboard-dashboard
 ## How to Run
 
 1.  **Clone the repository:**
-    ```bash
+   ```bash
 git clone https://github.com/Goutham3369/indian-startup-dashboard.git
 cd indian-startup-dashboard
    ```
