@@ -2,6 +2,9 @@
 
 This project is an interactive web dashboard built with Streamlit that provides a comprehensive analysis of the Indian startup funding ecosystem from 2015 to 2020. This tool allows users to explore funding trends, identify key players, and derive insights from a complex dataset.
 
+
+Direct Link for the Site: https://goutham3369-indian-startup-dashboard-dashboard-mprctw.streamlit.app/
+
 ## Dashboard Preview
 
 
@@ -26,10 +29,10 @@ This project is an interactive web dashboard built with Streamlit that provides 
 ## How to Run
 
 1.  **Clone the repository:**
-   ```bash
+    ```bash
 git clone https://github.com/Goutham3369/indian-startup-dashboard.git
 cd indian-startup-dashboard
-    ```
+   ```
 
 2.  **Create and activate a virtual environment (recommended):**
     ```bash
