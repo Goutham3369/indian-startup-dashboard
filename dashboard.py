@@ -28,7 +28,7 @@ def load_data():
     """This function loads, cleans, and prepares the startup funding data."""
     df = pd.read_csv('startup_funding.csv', encoding='utf-8')
 
-    # Rename columns for consistency and robustness
+
     df.rename(columns={
         'Date dd/mm/yyyy': 'Date',
         'Startup Name': 'StartupName',
